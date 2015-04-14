@@ -1,29 +1,29 @@
 # PhyBi
 Contains code and example data for running PhyBi a program for sorting isolates into relatedness groups
 
-This Zip folder contains all the files necessary for Phy-Bi to run. This should help users ensure that 
+This repository contains all the files necessary for Phy-Bi to run. This should help users ensure that 
 they have all the correct files in the correct format. 
-###It contains:
-The Phy-Bi Python Script
-###Example Trees in Newick format (e.g. RAxML_bestTree.Mycgr3T31400)
-###Example genesfiles.txt
-###Example isolatelist.txt
-###The OperatingCorrectly Folder Contains the output files that will be created when Phy-Bi is working correctly.
+####It contains:
+###The Phy-Bi Python Script
+####Example Trees in Newick format (e.g. RAxML_bestTree.Mycgr3T31400)
+####Example genesfiles.txt
+####Example isolatelist.txt
+####The OperatingCorrectly Folder Contains the output files that will be created when Phy-Bi is working correctly.
 
 
 
 
-##About Phy-Bi
+###About Phy-Bi
 Program for collapsing phylogenetic trees into phylogenetic bi-trees.#
 Phy-Bi is a program that allows biologists to gain a summary of the relatedness of different isolates.
 
-##Phy-Bi requires 3 inputs:
+###Phy-Bi requires 3 inputs:
 1.) A series of phylogenetic trees in Newick format. The filenames should take the form *.Genename
 2.) A .txt file named 'genefiles.txt' which contains a the name of each file from 1 on a new line.
 3.) A .txt file named 'isolatelist.txt' which contains the name of all isolates to be considered on the first line separated by commas.
 
 If a biologist only has the gene sequences for the different isolates, these can be converted into
-phylogenetic trees by a RAxML (http://sco.h-its.org/exelixis/web/software/raxml/index.html) or a similar program.
+phylogenetic trees by RAxML (http://sco.h-its.org/exelixis/web/software/raxml/index.html) or a similar program.
 
 Phy-Bi takes the phylogenetic tree corresponding to each gene and splits the isolates into two groups.
 This two group pattern is called a bi-tree. For a given number of isolates there is a limited number
@@ -35,7 +35,7 @@ of possible bi-trees (combinations). For example if there are 16 possible combin
 Phy-Bi then creates a file called 'BiTreesSummary.txt' which contains the frequency of occurance each bi-tree.
 Plotting this data gives the biologist information about how closely related each isolate is.
 
-#all - AllBin
+###all - AllBin
 One of the most useful functions of Phy-Bi is allowing biologists to find genes that match
 a particular bitree pattern (which may correspond to experimental data). If the 'AllBin' function
 is used then a file is created for each bi-tree pattern in a folder called 'genebins'.
